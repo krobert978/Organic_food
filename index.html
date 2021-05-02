@@ -1,16 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="./fonts/font-awesome/css/fontawesome-all.css">
   <link rel="stylesheet" href="style.css">
-  <script src="./app.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <title>Organic food</title>
 </head>
+
 <body>
+  <header>
+    <h2 class="offscreen">Organic food</h2>
+    <div class="menu-container-1">
+      <p>Opening hours 7:00 AM - 11:10 PM</p>
+      <a href="#">My Account</a>
+    </div>
+    <div class="menu-container">
+      <div class="logo">
+        <img src="./img/organic_logo.png" alt="" />
+      </div>
+      <nav class="main-menu">
+        <ul>
+          <li class="menu-item"><a href="#">Home</a></li>
+          <li class="menu-item"><a href="#">About Us</a></li>
+          <li class="menu-item"><a href="#">Shop</a></li>
+          <li class="menu-item"><a href="#">Our Team</a></li>
+          <li class="menu-item"><a href="#">Blog</a></li>
+          <li class="menu-item"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- slideshow goes here!!!! -->
+  <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img class="banner-image" src="./img/banner_image_1.jpg" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img class="banner-image" src="./img/banner_image_2.jpg" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img class="banner-image" src="./img/banner_image_3.jpg" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img class="banner-image" src="./img/banner_image_4.jpg" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img class="banner-image" src="./img/banner_image_5.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+  <!-- reserve now button is floating above the slideshow -->
+  <div class="banner-logo"><img src="./img/banner_logo150.png" alt=""></div>
+  <div class="banner-text">Drink The life like juice</div>
+  <div class="shop-button">
+    <a href="#">SHOP NOW</a>
+  </div>
 
 
+  <!-- <div class="title">
+    <h1 class="page-title">Buildings</h1>
+    <h2 class="page-subtitle">Architects &amp; Associates</h2>
+  </div> -->
+  <main>
+    <div class="main-container">
+      <div class="main-text">
+        <h3>Welcome to Super Organic Foods</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptas iure ratione, neque labore
+          magnam ex! Ipsam incidunt repellendus laboriosam?</p>
+      </div>
+      <div class="box-container">
+        <div class="main-box">
+          <img src="./icons/basic_world.svg" alt="">
+          <p>100% Natural</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quisquam saepe corrupti ab.
+            Exercitationem,
+            dolorem.</p>
+        </div>
+        <div class="main-box">
+          <img src="./icons/basic_elaboration_briefcase_refresh.svg" alt="">
+          <p>100% Natural</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quisquam saepe corrupti ab.
+            Exercitationem,
+            dolorem.</p>
+        </div>
+        <div class="main-box">
+          <img src="./icons/basic_todolist_pen.svg" alt="">
+          <p>100% Natural</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quisquam saepe corrupti ab.
+            Exercitationem,
+            dolorem.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-image"><img src="#" alt=""></div>
+    <div class="copyright">Copyright 2018</div>
+  </footer>
+  <script src="./app.js"></script>
 </body>
+
 </html>
