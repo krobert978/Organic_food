@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="./fonts/font-awesome/css/fontawesome-all.css">
@@ -16,24 +18,30 @@
 <body>
   <header>
     <h2 class="offscreen">Organic food</h2>
-    <div class="menu-container-1">
-      <p>Opening hours 7:00 AM - 11:10 PM</p>
-      <a href="#">My Account</a>
-    </div>
     <div class="menu-container">
-      <div class="logo">
-        <img src="./img/organic_logo.png" alt="" />
+      <div class="menu-top">
+        <p>Opening hours <i class="far fa-clock"></i> 7:00 AM - 11:10 PM </p>
+        <div class="menu-top-item">
+          <a href="#">My Account </a>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
       </div>
-      <nav class="main-menu">
-        <ul>
-          <li class="menu-item"><a href="#">Home</a></li>
-          <li class="menu-item"><a href="#">About Us</a></li>
-          <li class="menu-item"><a href="#">Shop</a></li>
-          <li class="menu-item"><a href="#">Our Team</a></li>
-          <li class="menu-item"><a href="#">Blog</a></li>
-          <li class="menu-item"><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
+      <div class="menu-bottom">
+        <div class="logo">
+          <img src="./img/organic_logo.png" alt="" />
+        </div>
+        <nav class="main-menu">
+          <ul>
+            <li class="menu-item"><a href="#">Home</a></li>
+            <li class="menu-item"><a href="#">About Us</a></li>
+            <li class="menu-item"><a href="#">Shop</a></li>
+            <li class="menu-item"><a href="#">Our Team</a></li>
+            <li class="menu-item"><a href="#">Blog</a></li>
+            <li class="menu-item"><a href="#">Contact Us</a></li>
+            <li class="menu-item"><a href="#"><i class="fas fa-search"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <!-- slideshow goes here!!!! -->
@@ -61,16 +69,14 @@
   </div>
   <!-- reserve now button is floating above the slideshow -->
   <div class="banner-logo"><img src="./img/banner_logo150.png" alt=""></div>
-  <div class="banner-text">Drink The life like juice</div>
+  <div class="banner-text">
+    <p>Drink The life like juice</p>
+  </div>
   <div class="shop-button">
     <a href="#">SHOP NOW</a>
   </div>
 
 
-  <!-- <div class="title">
-    <h1 class="page-title">Buildings</h1>
-    <h2 class="page-subtitle">Architects &amp; Associates</h2>
-  </div> -->
   <main>
     <div class="main-container">
       <div class="main-text">
@@ -104,10 +110,10 @@
     </div>
   </main>
   <footer>
-    <div class="footer-image"><img src="#" alt=""></div>
+    <div class="footer-image"></div>
     <div class="copyright">Copyright 2018</div>
   </footer>
-  <script src="./app.js"></script>
+  <!-- <script src="./app.js"></script> -->
 </body>
 
 </html>
