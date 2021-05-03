@@ -60,6 +60,15 @@ body {
   background-color: lightgrey;
 }
 
+/* menu */
+.menu-checkbox,
+.toggle-label {
+  display: none;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+}
+
 .swiper-container {
   height: 55vw;
   position: relative;
@@ -68,8 +77,6 @@ body {
 .menu-container {
   display: flex;
   flex-direction: column;
-
-  /* justify-content: flex-end; */
   position: absolute;
   top: 0;
   z-index: 2;
@@ -89,6 +96,7 @@ body {
   color: white;
   text-decoration: none;
   padding: 1rem 1vw;
+  margin-right: 2rem;
 }
 
 .menu-bottom {
@@ -96,6 +104,7 @@ body {
   justify-content: space-between;
   color: white;
   padding: 0 2rem;
+  margin-right: 2rem;
 }
 
 .logo img {
@@ -122,6 +131,26 @@ body {
 
 .shop-button a {
   text-decoration: none;
+  color: white;
+}
+
+.cart {
+  position: absolute;
+  top: 1rem;
+  right: 2.7rem;
+}
+
+.cart a {
+  color: white;
+}
+
+.search {
+  position: absolute;
+  top: 4.5rem;
+  right: 2.7rem;
+}
+
+.search a {
   color: white;
 }
 
@@ -171,6 +200,7 @@ body {
   cursor: pointer;
 }
 
+/* main */
 .box-container {
   display: flex;
   width: 75%;
@@ -190,6 +220,7 @@ body {
   background-color: rgb(232, 232, 232);
 }
 
+/* footer */
 .footer-image {
   background: url(./img/banner_image_2.jpg);
   height: 20vw;
@@ -204,10 +235,6 @@ body {
 }
 
 @media (max-width: 800px) {
-  .main-menu {
-    display: none;
-  }
-
   .main-container .box-container {
     flex-wrap: wrap;
   }
@@ -230,5 +257,35 @@ body {
   .banner-logo img {
     width: 80px;
     height: 80px;
+  }
+
+  .main-menu {
+    display: none;
+  }
+
+  .toggle-label {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .menu-bottom {
+    display: block;
+    color: white;
+  }
+
+  .main-menu ul {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+
+  .main-menu a {
+    padding: 0 5px;
+    font-weight: bold;
+  }
+
+  .menu-checkbox:checked ~ .main-menu {
+    display: block;
   }
 }
