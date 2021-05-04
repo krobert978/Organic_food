@@ -60,14 +60,22 @@ body {
   background-color: lightgrey;
 }
 
-/* menu */
+/* slideshow */
 .swiper-container {
   position: relative;
   height: 20rem;
   display: flex;
-  flex-grow: 1;
 }
 
+.swiper-slide img {
+  width: 100%;
+}
+
+.filter {
+  filter: brightness(50%);
+}
+
+/* menu */
 .menu-checkbox,
 .toggle-label {
   display: none;
@@ -153,11 +161,6 @@ body {
 
 .menu-top a:hover {
   background-color: teal;
-}
-
-/* slideshow */
-.filter {
-  filter: brightness(50%);
 }
 
 .banner {
