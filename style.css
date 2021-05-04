@@ -61,17 +61,19 @@ body {
 }
 
 /* menu */
+.swiper-container {
+  position: relative;
+  height: 20rem;
+  display: flex;
+  flex-grow: 1;
+}
+
 .menu-checkbox,
 .toggle-label {
   display: none;
   position: absolute;
   top: 0.6rem;
   right: 0.6rem;
-}
-
-.swiper-container {
-  height: 55vw;
-  position: relative;
 }
 
 .menu-container {
@@ -114,7 +116,6 @@ body {
 .main-menu ul,
 .menu-item a {
   display: flex;
-  align-items: center;
 }
 
 .main-menu ul {
@@ -129,29 +130,21 @@ body {
   padding: 1rem 1vw;
 }
 
-.shop-button a {
-  text-decoration: none;
-  color: white;
-}
-
-.cart {
+.cart-icon {
   position: absolute;
   top: 1rem;
   right: 2.7rem;
 }
 
-.cart a {
+.cart-icon a,
+.search-icon a {
   color: white;
 }
 
-.search {
+.search-icon {
   position: absolute;
   top: 4.5rem;
   right: 2.7rem;
-}
-
-.search a {
-  color: white;
 }
 
 .menu-item a:hover {
@@ -167,43 +160,46 @@ body {
   filter: brightness(50%);
 }
 
-.banner-image {
-  width: 100%;
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 26%;
+  position: absolute;
+  top: 6rem;
+  right: 37vw;
+  z-index: 1;
 }
 
-.banner-text {
-  position: absolute;
-  top: 30vw;
-  width: 100vw;
+.banner img {
+  margin: 0 auto;
+  width: 6rem;
+}
+
+.banner p {
   text-align: center;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
-  z-index: 1;
-}
-
-.banner-logo {
-  position: absolute;
-  top: 17vw;
-  width: 100vw;
-  text-align: center;
-  z-index: 1;
 }
 
 .shop-button {
-  position: absolute;
-  top: 40vw;
-  right: calc(50% - 100px);
-  width: 200px;
-  padding: 10px 0;
+  text-decoration: none;
+  color: white;
+  width: 10rem;
+  padding: 5px 0;
   text-align: center;
   border-radius: 200px;
+  margin: 0  auto;
   background-color: rgb(39, 446, 51);
-  z-index: 1;
   cursor: pointer;
 }
 
 /* main */
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .box-container {
   display: flex;
   width: 75%;
@@ -226,15 +222,15 @@ body {
 /* footer */
 .footer-image {
   background: url(./img/banner_image_2.jpg);
-  height: 20vw;
-  background-position: center center;
+  height: 20rem;
+  background-position: 50% 30%;
 }
 
 .copyright {
   margin: 0 auto;
   padding-top: 1vw;
   text-align: center;
-  height: 15vw;
+  height: 10rem;
 }
 
 @media (max-width: 800px) {
@@ -243,27 +239,30 @@ body {
   }
 
   .shop-button {
-    position: absolute;
-    top: 45vw;
-    right: calc(50% - 50px);
-    width: 100px;
+    width: 7rem;
+    font-size: 0.8rem;
     padding: 5px 0;
   }
 
-  .banner-text {
-    position: absolute;
-    top: 25vw;
-    left: calc(50% - 100px);
-    width: 200px;
+  .banner {
+    width: 26%;
+    right: 37%;
   }
 
-  .banner-logo img {
-    width: 80px;
-    height: 80px;
+  .banner img {
+    width: 4rem;
+  }
+
+  .main-box {
+    width: 30vw;
+    margin: 10px auto;
   }
 
   .main-menu {
     display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
   }
 
   .toggle-label {
@@ -272,10 +271,13 @@ body {
     cursor: pointer;
   }
 
+  .menu-top {
+    padding-left: 1rem;
+  }
+
   .menu-bottom {
-    display: inline;
-    color: white;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     padding: 0;
   }
 
@@ -285,16 +287,12 @@ body {
     background-color: cadetblue;
   }
 
-  .menu-item {
-    display: flex;
-    margin: 5px 0;
-  }
-
   .main-menu a {
     display: flex;
-    padding: 0 15rem;
+    padding: 10px;
     font-weight: bold;
-    width: 5rem;
+    width: 100%;
+    justify-content: center;
   }
 
   .menu-checkbox:checked ~ .main-menu {
